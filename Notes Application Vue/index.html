@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0" />
+
+	<title>Vue Notes</title>
+
+	<link rel="stylesheet" href="html/styles.css">
+
+	<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+    
+</head>
+<body>
+    <div id="root">
+
+       <div id="dragtest">
+        
+       </div>
+
+
+
+        <div id="navigation-bar">
+
+           <h2>{{title}}</h2>
+           <h3>A Notepad app made with Vue.js</h3>
+
+           <textarea class="first" maxlength="30" autofocus placeholder=" Name" v-model="note.name"></textarea>
+           <textarea class="second" maxlength="204" autofocus placeholder="Contents" v-model="note.text"></textarea>
+
+           <button class="button" @click="add">Submit</button>
+
+        </div>
+
+
+
+        <div id="app">
+
+        <div v-for="(note, index) in notes">
+           <div class ="top">
+
+              <button class="close" @click="remove(index)"></button>
+              <textarea class="third" maxlength="25" v-model="note.name">{{note.name}}</textarea>
+
+           </div>
+
+              <textarea class="fourth" maxlength="204" v-model="note.text">{{note.text}}</textarea>
+
+           </div>
+        </div>
+
+
+
+    <script src="main.js"></script>
+    </div>
+</body>
+</html>

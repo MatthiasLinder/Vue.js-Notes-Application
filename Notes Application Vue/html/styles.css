@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+        body {
+            font-family: "Roboto";
+        }
+        h2 {
+        	font-size: 30px;
+            margin: 10px;
+            color: teal;
+        }
+        h3 {
+        	font-size: 15px;
+            margin: 10px
+            padding: 10px;
+        }
+
+        
+
+        #navigation-bar {
+            margin: 0 auto;
+            height: 300px;
+            width: 300px;
+            
+            padding: 5px;
+            border: 2px solid #000000;
+            border-radius: 25px;
+
+            text-align: center;
+        }
+        
+
+
+        textarea.first {
+            display: block;
+            width: 250px;
+            height: 30px;
+            padding: 8px;
+            margin: 0 auto;
+            border: 2px solid #000000;
+            resize: none;
+        }
+
+        textarea.second {
+            display: block;
+            width: 250px;
+            height: 100px;
+            padding: 8px;
+            margin: 0 auto;
+            border: 2px solid #000000;
+            resize: none;
+        }
+
+        textarea.third {
+            font-size: 15px;
+            display: block;
+            width: 180px;
+            height: 20px;
+            padding: 8px;
+            margin: 0 auto;
+            resize: none;
+            overflow: hidden;
+            border: none;
+
+        }
+
+        textarea.fourth {
+            display: block;
+            width: 180px;
+            height: 140px;
+            padding: 8px;
+            margin: 0 auto;
+            resize: none;
+            /*outline: none;*/
+            border: none;
+            /*overflow: hidden;*/
+        }
+
+
+
+        textarea:focus {
+            border-color: teal;
+        }
+        button {
+            padding: 0;
+            cursor: pointer;
+            background: transparent;
+            border: 0;
+            -webkit-appearance: none;
+        }
+
+
+
+        #app {
+            display: flex;
+            flex-flow: row wrap;
+            margin: 0 auto;
+            height: 900px;
+            justify-content: flex-start;
+            align-content: flex-start;
+        }
+
+        #app > * {
+            border-radius: 2px;
+            transition: all ease 0.3s;
+        }
+
+        #app>div {
+            position: relative;
+            width: 220px;
+            height: 200px;
+            padding: 8px;
+            margin: 10px;
+            border: 2px solid #ccc;
+        }
+
+
+
+        .button {
+            display: block;
+            box-sizing: content-box;
+            width: 200px;
+            padding: 8px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            clear: both;
+        }
+
+        .button:hover {
+            background-color: teal;
+            color: white;
+            border-color: teal;
+        }
+
+        .top {
+            text-align: right;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            margin-bottom: 0.5em;
+        }
+        
+        .close {
+            text-align: right;
+            height: 10px;
+            width: 10px;
+            position: relative;
+            box-sizing: border-box;
+            line-height: 10px;
+            display: inline-block;
+        }
+
+        .close:before, .close:after {
+            transform: rotate(-45deg);
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -1px;
+            margin-left: -5px;
+            display: block;
+            height: 2px;
+            width: 10px;
+            background-color: black;
+            transition: all 0.25s ease-out;
+        }
+
+        .close:after {
+            transform: rotate(-135deg);
+        }
+
+
+
+
